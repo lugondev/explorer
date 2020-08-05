@@ -14,14 +14,14 @@ export const I18N = {
 
 export const brand = {
   footer: {
-    url: "https://ark.io",
-    text: "ARK.io",
+    url: "https://homepage.io",
+    text: "homepage.io",
   },
 };
 
 export const knownWalletsUrls = {
-  mainnet: "https://raw.githubusercontent.com/ArkEcosystem/common/master/mainnet/known-wallets.json",
-  devnet: "https://raw.githubusercontent.com/ArkEcosystem/common/master/devnet/known-wallets.json",
+  // mainnet: "https://raw.githubusercontent.com/ArkEcosystem/common/master/mainnet/known-wallets.json",
+  // devnet: "https://raw.githubusercontent.com/ArkEcosystem/common/master/devnet/known-wallets.json",
 };
 
 export const socialMedia = [

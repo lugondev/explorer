@@ -36,14 +36,12 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import ChartWrapper from "@/components/ChartWrapper.vue";
 import { LatestBlocks, LatestTransactions } from "@/components/home";
 import SelectionType from "@/components/SelectionType.vue";
 import { ITransactionType } from "@/interfaces";
 
 @Component({
   components: {
-    ChartWrapper,
     LatestBlocks,
     LatestTransactions,
     SelectionType,

@@ -12,9 +12,9 @@
         <div :class="{ 'pr-6': showMarketCap }">
           {{ $t("HEADER.SUPPLY") }}: <span class="whitespace-no-wrap">{{ readableCrypto(supply, true, 0) }}</span>
         </div>
-        <div v-if="showMarketCap">
-          {{ $t("HEADER.MARKET_CAP") }}: <span class="whitespace-no-wrap">{{ readableCurrency(supply) }}</span>
-        </div>
+<!--        <div v-if="showMarketCap">-->
+<!--          {{ $t("HEADER.MARKET_CAP") }}: <span class="whitespace-no-wrap">{{ readableCurrency(supply) }}</span>-->
+<!--        </div>-->
       </div>
     </div>
     <div

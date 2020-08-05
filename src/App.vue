@@ -68,7 +68,7 @@ export default class App extends Vue {
 
     const nightMode = localStorage.getItem("nightMode");
 
-    let nightModeBoolean = nightMode === "true" ? true : false;
+    let nightModeBoolean = nightMode === "true";
     if (nightMode === null) {
       // Only on first time
       nightModeBoolean = network.alias === "Development";

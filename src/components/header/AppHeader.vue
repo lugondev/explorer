@@ -39,15 +39,16 @@ import { HeaderDefault, HeaderSearch, HeaderMenuDesktop, HeaderMenuMobile } from
     ...mapGetters("network", ["hasMagistrateEnabled"]),
 
     menuEntries() {
-      const entries = [{ name: "home" }, { name: "top-wallets", params: { page: 1 } }, { name: "delegate-monitor" }];
-
-      if (this.hasMagistrateEnabled) {
-        entries.push({ name: "businesses", params: { page: 1 } }, { name: "bridgechains", params: { page: 1 } });
-      }
-
-      entries.push({ name: "advanced-search", params: { page: 1 } });
-
-      return entries;
+      // const entries = [{ name: "home" }, { name: "top-wallets", params: { page: 1 } }, { name: "delegate-monitor" }];
+      //
+      // if (this.hasMagistrateEnabled) {
+      //   entries.push({ name: "businesses", params: { page: 1 } }, { name: "bridgechains", params: { page: 1 } });
+      // }
+      //
+      // entries.push({ name: "advanced-search", params: { page: 1 } });
+      //
+      // return entries;
+      return  [{ name: "top-wallets", params: { page: 1 } }];
     },
   },
 })

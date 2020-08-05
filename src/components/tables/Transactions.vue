@@ -36,11 +36,11 @@
           />
         </div>
 
-        <div v-else-if="data.column.field === 'vendorField'">
-          <div class="cell-smartbridge-truncate">
-            {{ data.row.vendorField }}
-          </div>
-        </div>
+<!--        <div v-else-if="data.column.field === 'vendorField'">-->
+<!--          <div class="cell-smartbridge-truncate">-->
+<!--            {{ data.row.vendorField }}-->
+<!--          </div>-->
+<!--        </div>-->
 
         <div v-else-if="data.column.field === 'amount'">
           <TransactionAmount :transaction="data.row" />
@@ -128,13 +128,13 @@ export default class TableTransactionsDesktop extends Vue {
         field: "recipient",
         tdClass: "break-all",
       },
-      {
-        label: this.$t("TRANSACTION.SMARTBRIDGE"),
-        field: "vendorField",
-        thClass: "text-right cell-smartbridge",
-        tdClass: "text-right cell-smartbridge",
-        hidden: this.smartbridgeFilter === "hidden",
-      },
+      // {
+      //   label: this.$t("TRANSACTION.SMARTBRIDGE"),
+      //   field: "vendorField",
+      //   thClass: "text-right cell-smartbridge",
+      //   tdClass: "text-right cell-smartbridge",
+      //   hidden: this.smartbridgeFilter === "hidden",
+      // },
       {
         label: this.$t("TRANSACTION.AMOUNT"),
         field: "amount",

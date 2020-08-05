@@ -12,30 +12,30 @@
 
       <div :class="{ 'SettingsModal__content__disclaimer--show': showDisclaimer }" class="p-0 SettingsModal__content">
         <ListDivided>
-          <ListDividedItem v-if="showCurrency" :label="$t('MODAL_SETTINGS.CURRENCY')">
-            <InputSelect
-              :select-options="selectCurrencies"
-              :value="currencyName"
-              name="currency"
-              class="SettingsModal__inputSelect SettingsModal__select__currency"
-              @input="onSelectChange"
-            />
-          </ListDividedItem>
-          <ListDividedItem :label="$t('MODAL_SETTINGS.SMARTBRIDGE_FILTER')">
-            <InputSelect
-              :select-options="selectSmartbridgeFilter"
-              :value="smartbridgeFilter"
-              name="smartbridge-filter"
-              class="SettingsModal__inputSelect SettingsModal__select__smartbridge-filter"
-              @input="onSelectChange"
-            />
-          </ListDividedItem>
+<!--          <ListDividedItem v-if="showCurrency" :label="$t('MODAL_SETTINGS.CURRENCY')">-->
+<!--            <InputSelect-->
+<!--              :select-options="selectCurrencies"-->
+<!--              :value="currencyName"-->
+<!--              name="currency"-->
+<!--              class="SettingsModal__inputSelect SettingsModal__select__currency"-->
+<!--              @input="onSelectChange"-->
+<!--            />-->
+<!--          </ListDividedItem>-->
+<!--          <ListDividedItem :label="$t('MODAL_SETTINGS.SMARTBRIDGE_FILTER')">-->
+<!--            <InputSelect-->
+<!--              :select-options="selectSmartbridgeFilter"-->
+<!--              :value="smartbridgeFilter"-->
+<!--              name="smartbridge-filter"-->
+<!--              class="SettingsModal__inputSelect SettingsModal__select__smartbridge-filter"-->
+<!--              @input="onSelectChange"-->
+<!--            />-->
+<!--          </ListDividedItem>-->
           <ListDividedItem :label="$t('MODAL_SETTINGS.DARK_THEME')">
             <ButtonSwitch :is-active="nightMode" class="mt-2 SettingsModal__toggle__darkTheme" @change="toggleTheme" />
           </ListDividedItem>
-          <ListDividedItem v-if="showCurrency" :label="$t('MODAL_SETTINGS.PRICE_CHART')">
-            <ButtonSwitch :is-active="chartMode" class="mt-2 SettingsModal__toggle__priceChart" @change="toggleChart" />
-          </ListDividedItem>
+<!--          <ListDividedItem v-if="showCurrency" :label="$t('MODAL_SETTINGS.PRICE_CHART')">-->
+<!--            <ButtonSwitch :is-active="chartMode" class="mt-2 SettingsModal__toggle__priceChart" @change="toggleChart" />-->
+<!--          </ListDividedItem>-->
           <ListDividedItem :label="$t('MODAL_SETTINGS.LANGUAGE')">
             <InputSelect
               :select-options="selectLanguages"
@@ -47,26 +47,26 @@
           </ListDividedItem>
         </ListDivided>
 
-        <div v-if="showDisclaimer" class="text-justify SettingsModal__disclaimer">
-          <div class="pt-4 my-5 border-t border-theme-line-separator"></div>
-          <p class="mb-2 text-red semibold">{{ $t("DISCLAIMER.TITLE") }}:</p>
-          <i18n path="DISCLAIMER.TEXT3" tag="p">
-            <template v-slot:website>
-              <a href="https://ark.io/" target="_blank">ARK.io</a>
-            </template>
-          </i18n>
-          <div class="flex justify-center mt-3 mb-9">
-            <label class="flex items-center text-gray-500">
-              <input
-                type="checkbox"
-                class="mr-2 leading-tight SettingsModal__disclaimer__terms__checkbox"
-                :checked="hasAcceptedTerms"
-                @change="toggleAcceptTerms"
-              />
-              <span class="text-sm font-bold">{{ $t("COMMON.I_AGREE") }}</span>
-            </label>
-          </div>
-        </div>
+<!--        <div v-if="showDisclaimer" class="text-justify SettingsModal__disclaimer">-->
+<!--          <div class="pt-4 my-5 border-t border-theme-line-separator"></div>-->
+<!--          <p class="mb-2 text-red semibold">{{ $t("DISCLAIMER.TITLE") }}:</p>-->
+<!--          <i18n path="DISCLAIMER.TEXT3" tag="p">-->
+<!--            <template v-slot:website>-->
+<!--              <a href="https://ark.io/" target="_blank">ARK.io</a>-->
+<!--            </template>-->
+<!--          </i18n>-->
+<!--          <div class="flex justify-center mt-3 mb-9">-->
+<!--            <label class="flex items-center text-gray-500">-->
+<!--              <input-->
+<!--                type="checkbox"-->
+<!--                class="mr-2 leading-tight SettingsModal__disclaimer__terms__checkbox"-->
+<!--                :checked="hasAcceptedTerms"-->
+<!--                @change="toggleAcceptTerms"-->
+<!--              />-->
+<!--              <span class="text-sm font-bold">{{ $t("COMMON.I_AGREE") }}</span>-->
+<!--            </label>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
 
       <div class="flex flex-row justify-center mt-5 SettingsModal__footer md:justify-start">
@@ -112,7 +112,7 @@ export default class SettingsModal extends Vue {
   private chartMode: boolean;
   private language: string;
   private isAcceptTerms = false;
-  private notShowDisclaimer = false;
+  private notShowDisclaimer = true;
   private isLoading = false;
 
   private readonly smartbridgeFilterTypes = {
@@ -160,13 +160,14 @@ export default class SettingsModal extends Vue {
     this.currencySymbol = this.$store.getters["currency/symbol"];
     this.smartbridgeFilter = this.$store.getters["ui/smartbridgeFilter"];
     this.nightMode = this.$store.getters["ui/nightMode"];
-    this.chartMode = this.$store.getters["ui/priceChartOptions"].enabled;
+    // this.chartMode = this.$store.getters["ui/priceChartOptions"].enabled;
+    this.chartMode = false;
     this.language = this.$store.getters["ui/language"];
 
-    if (this.smartbridgeFilter === "unfiltered") {
-      this.isAcceptTerms = true;
-      this.notShowDisclaimer = true;
-    }
+    // if (this.smartbridgeFilter === "unfiltered") {
+    //   this.isAcceptTerms = true;
+    //   this.notShowDisclaimer = true;
+    // }
   }
 
   private onSelectChange(event: any) {
