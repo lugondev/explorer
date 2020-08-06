@@ -35,10 +35,10 @@ export const inputProcessor = async (
 ): Promise<{ value: string | number; ts: number }> => {
   const ts = Date.now();
 
-  const arktoshiValues = ["amount", "totalAmount", "fee", "totalFee", "reward", "balance"];
+  const toshiValues = ["amount", "totalAmount", "fee", "totalFee", "reward", "balance"];
   const publicKeyValues = ["vote", "generatorPublicKey"];
 
-  if (arktoshiValues.find((name) => inputName.includes(name))) {
+  if (toshiValues.find((name) => inputName.includes(name))) {
     const valAsNum = Number(inputValue);
     return { value: valAsNum > 0 ? Number(inputValue) * 1e8 : 0, ts };
   }
