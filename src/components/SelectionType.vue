@@ -48,13 +48,13 @@
         <SvgIcon :class="{ 'rotate-180': isOpen }" name="caret" view-box="0 0 16 16" />
       </span>
 
-      <ul v-show="isOpen" class="right-0 mt-2 SelectionType--options">
-        <li v-for="type in types" :key="type.key">
-          <div class="dropdown-button" @click="filterTransactions(type)">
-            {{ $t(`TRANSACTION.TYPES.${type.key}`) }}
-          </div>
-        </li>
-      </ul>
+<!--      <ul v-show="isOpen" class="right-0 mt-2 SelectionType&#45;&#45;options">-->
+<!--        <li v-for="type in types" :key="type.key">-->
+<!--          <div class="dropdown-button" @click="filterTransactions(type)">-->
+<!--            {{ $t(`TRANSACTION.TYPES.${type.key}`) }}-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
     </div>
   </span>
 </template>

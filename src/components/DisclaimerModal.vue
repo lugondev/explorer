@@ -6,7 +6,7 @@
       </p>
       <i18n path="DISCLAIMER.TEXT1" tag="p">
         <template v-slot:website>
-          <a href="https://ark.io/" target="_blank">ARK.io</a>
+          <a href="https://homepage.io/" target="_blank">homepage.io</a>
         </template>
       </i18n>
       <p class="mt-3">{{ $t("DISCLAIMER.TEXT2") }}</p>

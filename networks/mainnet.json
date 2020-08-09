@@ -1,6 +1,6 @@
 {
-  "title": "ARK Explorer",
-  "server": "https://explorer.ark.io/api",
+  "title": "Explorer",
+  "server": "https://http://164.90.230.252:4003/api",
   "alias": "Main",
   "activeDelegates": 51,
   "rewardOffset": 75600,
