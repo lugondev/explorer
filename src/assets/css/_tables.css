@@ -44,7 +44,6 @@
 
 .vgt-table tbody tr:hover {
   background-color: var(--color-theme-table-row-hover);
-  transform: scale(1.015);
   box-shadow: var(--theme-table-hover-shadow);
   z-index: 999;
   border-radius: 7px;
