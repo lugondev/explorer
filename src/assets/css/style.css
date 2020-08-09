@@ -19,6 +19,10 @@
   height: 20px;
 }
 
+.max-w-70px {
+  max-width: 70px;
+}
+
 .v-spinner {
   @apply .flex .items-center .justify-center;
 }

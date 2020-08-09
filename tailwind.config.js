@@ -112,7 +112,7 @@ module.exports = {
       "link-color": "#3790ff",
       // END CUSTOM ADDED
 
-      black: "#172130",
+      black: "#43494f",
 
       "grey-darkest": "#395174", // UPDATED
       "grey-darker": "#606f7b",
@@ -165,8 +165,8 @@ module.exports = {
 
       "blue-darkest": "#202126", // UPDATED
       "blue-darker": "#282a38", // UPDATED
-      "blue-dark": "#2779bd",
-      blue: "#037CFF", // UPDATED
+      "blue-dark": "#043c79",
+      blue: "#48b4e3", // UPDATED
       "blue-light": "#6f77a4", // UPDATED
       "blue-lighter": "#e8eeff", // UPDATED
       "blue-lightest": "#e0f0fd", // UPDATED
@@ -202,7 +202,7 @@ module.exports = {
 
     fontFamily: {
       sans: [
-        "Inter Regular",
+        "Roboto Regular",
         "-apple-system",
         "BlinkMacSystemFont",
         "Segoe UI",
