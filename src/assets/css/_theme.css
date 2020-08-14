@@ -1,8 +1,8 @@
 .theme-light {
   --color-theme-text-thead: #c5c7cb;
   --color-theme-table-row-sticky: #fff;
-  --color-theme-accents: #48b4e3;
-  --color-theme-transaction-icon: #48b4e3;
+  --color-theme-accents: #f48120;
+  --color-theme-transaction-icon: #f48120;
 
   --color-theme-page-background-primary: #f5f6fa;
   --color-theme-content-background-primary: #fff;
@@ -24,7 +24,7 @@
   --ark-meter: #e4ece9;
   --theme-button: #e5f0f9;
   --theme-button-active: #c5dbed;
-  --theme-button-text: #48b4e3;
+  --theme-button-text: #f48120;
   --theme-button-close: #a0a6c8;
   --theme-switch-button: #d1dfeb;
   --theme-switch-button-circle: #a2b0f5;
@@ -46,8 +46,8 @@
 .theme-dark {
   --color-theme-text-thead: #a1a2a6;
   --color-theme-table-row-sticky: #25262c;
-  --color-theme-accents: #48b4e3;
-  --color-theme-transaction-icon: #48b4e3;
+  --color-theme-accents: #f48120;
+  --color-theme-transaction-icon: #f48120;
 
   --color-theme-page-background-primary: #1a1b1f;
   --color-theme-content-background-primary: #202126;
