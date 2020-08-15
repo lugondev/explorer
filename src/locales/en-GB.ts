@@ -178,7 +178,7 @@ export default {
   SEARCH: {
     PLACEHOLDER: {
       SHORT: "Search",
-      LONG: "Find a block, transaction, address",
+      LONG: "Search by Address / Txn Hash / Block / Ens",
     },
     NO_RESULTS: "Nothing matched your search",
   },

@@ -27,12 +27,10 @@
           <SvgIcon name="search" view-box="0 0 16 16" />
         </label>
       </div>
-
-      <span v-if="showCurrency" class="block mx-2 my-4 border-r md:mx-4 lg:mx-6" />
-      <HeaderCurrency v-if="showCurrency" />
-
       <span class="block mx-2 my-4 border-r md:mx-4 lg:mx-6" />
       <HeaderSettings />
+      <span v-if="showCurrency" class="block mx-2 my-4 border-r md:mx-4 lg:mx-6" />
+      <HeaderCurrency v-if="showCurrency" />
     </div>
   </div>
 </template>

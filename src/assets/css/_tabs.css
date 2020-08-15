@@ -2,21 +2,36 @@
   transition: all 0.1s ease-in;
 }
 
+.active-tab-gradient {
+  border-bottom: none;
+  position: relative;
+}
+
+.active-tab:after {
+  content:"";
+  background: linear-gradient(90deg, rgba(49,183,209,1) 0%, rgba(23,71,157,1) 100%);
+  display: block;
+  height:3px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 .base-tab {
   @apply .mr-4 .py-4 .px-2 .cursor-pointer .border-b-3;
 }
 
 .active-tab {
-  @apply .base-tab .text-lg .border-blue .text-theme-text-primary .transition;
+  @apply .active-tab-gradient .base-tab .text-lg .border-blue .text-blue .transition;
 }
 
 .inactive-tab {
-  @apply .base-tab .text-theme-text-secondary .border-transparent .transition;
+  @apply .active-tab-gradient .base-tab .text-black .border-transparent .transition;
 }
 
 .active-tab:hover,
 .inactive-tab:hover {
-  @apply .text-theme-text-primary .border-blue;
+  @apply .text-teal .border-blue;
 }
 
 @screen sm {
@@ -25,6 +40,6 @@
   }
 
   .inactive-tab {
-    @apply .text-lg;
+    @apply .text-2xl;
   }
 }

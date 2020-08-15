@@ -15,6 +15,12 @@
     src: url('../fonts/Roboto-Medium.ttf');
     font-weight: 600;
 }
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/Verdana.ttf');
+}
+
 .semibold {
   font-family: 'Roboto Semibold';
 }

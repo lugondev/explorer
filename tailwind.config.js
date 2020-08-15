@@ -109,7 +109,7 @@ module.exports = {
       "status-missed-round": "#f5bd5c",
       "status-became-active": "#037cff",
 
-      "link-color": "#3790ff",
+      "link-color": "#31b7d1",
       // END CUSTOM ADDED
 
       black: "#43494f",
@@ -134,7 +134,7 @@ module.exports = {
       "orange-darkest": "#462a16",
       "orange-darker": "#613b1f",
       "orange-dark": "#de751f",
-      orange: "#f6993f",
+      orange: "#f48120",
       "orange-light": "#faad63",
       "orange-lighter": "#fcd9b6",
       "orange-lightest": "#fff5eb",
@@ -158,7 +158,7 @@ module.exports = {
       "teal-darkest": "#0d3331",
       "teal-darker": "#20504f",
       "teal-dark": "#38a89d",
-      teal: "#4dc0b5",
+      teal: "#31b7d1",
       "teal-light": "#64d5ca",
       "teal-lighter": "#a0f0ed",
       "teal-lightest": "#e8fffe",
@@ -166,7 +166,7 @@ module.exports = {
       "blue-darkest": "#202126", // UPDATED
       "blue-darker": "#282a38", // UPDATED
       "blue-dark": "#043c79",
-      blue: "#48b4e3", // UPDATED
+      blue: "#17479d", // UPDATED
       "blue-light": "#6f77a4", // UPDATED
       "blue-lighter": "#e8eeff", // UPDATED
       "blue-lightest": "#e0f0fd", // UPDATED

@@ -4,7 +4,7 @@
   --color-theme-accents: #f48120;
   --color-theme-transaction-icon: #f48120;
 
-  --color-theme-page-background-primary: #f5f6fa;
+  --color-theme-page-background-primary: #e8f5fe;
   --color-theme-content-background-primary: #fff;
   --color-theme-feature-background: #20222d;
   --color-theme-table-row: #f8f9fd;
@@ -40,7 +40,7 @@
   color: #838a9b;
 }
 .theme-light footer a:hover {
-  color: #7b8291;
+  color: #31b7d1;
 }
 
 .theme-dark {

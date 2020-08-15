@@ -4,7 +4,7 @@
       :to="{ name: 'home' }"
       class="flex items-center justify-center flex-none text-2xl logo-container w-50px md:w-80px h-50px md:h-80px xl:rounded-l-md"
     >
-      <img class="logo ml-2 md:max-w-70px sm:max-w-50px" src="@/assets/images/logo.svg" />
+      <img class="logo ml-2 md:max-w-70px sm:max-w-50px" src="@/assets/images/margix-logo.svg" />
     </RouterLink>
 
     <div class="relative hidden w-full xl:flex">
