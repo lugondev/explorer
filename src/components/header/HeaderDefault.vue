@@ -1,7 +1,16 @@
 <template>
   <div class="HeaderDefault">
     <div class="flex flex-auto px-4 md:px-8">
-
+      <button
+        :class="[
+          menuVisible ? 'border-theme-accents' : 'border-transparent',
+          'px-2 sm:px-4 py-3 md:py-6 flex-none flex items-center border-b-2 mt-2px hover:border-theme-accents text-theme-text-secondary transition',
+        ]"
+        @click="$store.dispatch('ui/setMenuVisible', !menuVisible)"
+      >
+        <SvgIcon class="flex-none mr-3" name="menu" view-box="0 0 15 13" />
+        <span class="semibold">{{ $t("HEADER.MENU") }}</span>
+      </button>
       <span class="mx-2 my-4 border-r md:mx-4 lg:mx-6" />
       <div class="flex items-center justify-center flex-auto">
         <label for="search" class="hidden">{{ $t("SEARCH.PLACEHOLDER.SHORT") }}</label>
