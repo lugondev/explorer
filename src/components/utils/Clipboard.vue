@@ -91,6 +91,6 @@ export default class Clipboard extends Vue {
 
 <style>
 .ClipboardButton {
-  @apply .flex-none;
+  @apply .flex-none .text-white;
 }
 </style>

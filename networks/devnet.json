@@ -1,13 +1,14 @@
 {
-  "title": "qlug Devnet Explorer",
-  "server": "http://139.59.155.67:4103/api/v2",
-  "alias": "Development",
+  "title": "ibgnetwork Testnet Explorer",
+  "server": "http://164.90.230.252:4003/api/v2",
+  "alias": "Testnet local",
   "activeDelegates": "51",
   "rewardOffset": "1",
   "currencies": [],
+  "knownWallets": {},
   "defaults": {
-    "token": "GUL",
-    "symbol": "Ø",
+    "token": "IBG",
+    "symbol": "IBG",
     "currency": null,
     "priceChartOptions": {
       "enabled": false,
@@ -15,6 +16,5 @@
       "type": "price"
     },
     "priceChart": false
-  },
-  "knownWallets": {}
+  }
 }

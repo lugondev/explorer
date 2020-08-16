@@ -109,7 +109,7 @@ module.exports = {
       "status-missed-round": "#f5bd5c",
       "status-became-active": "#037cff",
 
-      "link-color": "#31b7d1",
+      "link-color": "#17479d",
       // END CUSTOM ADDED
 
       black: "#43494f",
@@ -202,6 +202,7 @@ module.exports = {
 
     fontFamily: {
       sans: [
+        "Verdana",
         "Roboto Regular",
         "-apple-system",
         "BlinkMacSystemFont",

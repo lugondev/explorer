@@ -30,9 +30,9 @@
 <!--              @input="onSelectChange"-->
 <!--            />-->
 <!--          </ListDividedItem>-->
-          <ListDividedItem :label="$t('MODAL_SETTINGS.DARK_THEME')">
+          <!--<ListDividedItem :label="$t('MODAL_SETTINGS.DARK_THEME')">
             <ButtonSwitch :is-active="nightMode" class="mt-2 SettingsModal__toggle__darkTheme" @change="toggleTheme" />
-          </ListDividedItem>
+          </ListDividedItem>-->
 <!--          <ListDividedItem v-if="showCurrency" :label="$t('MODAL_SETTINGS.PRICE_CHART')">-->
 <!--            <ButtonSwitch :is-active="chartMode" class="mt-2 SettingsModal__toggle__priceChart" @change="toggleChart" />-->
 <!--          </ListDividedItem>-->
